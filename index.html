@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindTheCase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FindTheCase</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <div class="language-selector">
+        <label for="language">Choose Language:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="english">English</option>
+            <option value="hindi">हिंदी</option>
+        </select>
+    </div>
+    
+    <main>
+        <section class="search-section">
+            <h2>Find Applicable Laws & Acts</h2>
+            <div class="search-box">
+                <input type="text" id="crime-input" placeholder="Enter crime details">
+                <button onclick="searchCrime()">Search</button>
+            </div>
+            <div id="results-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FindTheCase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
